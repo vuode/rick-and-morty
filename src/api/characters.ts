@@ -12,7 +12,7 @@ export interface CharacterLocation {
   url: string
 }
 
-export interface Character {
+export interface Character extends Record<string, any> {
   id: number
   name: string
   status: 'Dead' | 'Alive' | 'unknown'
