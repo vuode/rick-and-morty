@@ -1,0 +1,63 @@
+.scroll {
+  border-radius: 1rem;
+  overflow-x: scroll;
+}
+
+.wrapper {
+  border-collapse: collapse;
+  border: none;
+  background-color: hsl(0, 0, 92);
+}
+
+.wrapperWidth {
+  width: 100%;
+}
+
+.headerRow {
+  border-bottom: 1px solid black;
+  background-color: hsl(0, 0, 95);
+}
+
+.headerCell {
+  padding: .6rem .4rem;
+  text-align: start;
+  vertical-align: top;
+
+  &:first-child {
+    padding-left: 1rem;
+  }
+
+  &:last-child {
+    padding-right: 1rem;
+  }
+}
+
+.row:nth-child(2n) {
+  background-color: hsl(0, 0, 95);
+}
+
+.cell {
+  padding: .4rem;
+  text-align: start;
+  vertical-align: top;
+
+  &:first-child {
+    padding-left: 1rem;
+  }
+
+  &:last-child {
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .wrapperWidth {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .scroll {
+    border-radius: 0;
+  }
+}
